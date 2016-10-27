@@ -51,6 +51,7 @@ env:
     - "TESTDIR=Dart/stream"
     - "TESTDIR=Elixir/phoenix"
     - "TESTDIR=Elixir/cowboy"
+    - "TESTDIR=Elixir/plug"
     - "TESTDIR=Erlang/chicagoboss"
     - "TESTDIR=Erlang/cowboy"
     - "TESTDIR=Erlang/elli"

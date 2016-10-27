@@ -1,0 +1,28 @@
+{
+    "framework": "plug",
+    "tests": [{
+        "default": {
+            "setup_file": "setup",
+            "json_url": "/json",
+            "db_url": "/db",
+            "query_url": "/queries/",
+            "fortune_url": "/fortune",
+            "update_url": "/updates/",
+            "plaintext_url": "/plaintext",
+            "port": 8080,
+            "approach": "Realistic",
+            "classification": "Micro",
+            "database": "Postgres",
+            "framework": "Plug",
+            "language": "elixir",
+            "orm": "full",
+            "platform": "Erlang/OTP",
+            "webserver": "cowboy",
+            "os": "Linux",
+            "database_os": "Linux",
+            "display_name": "Plug",
+            "notes": "",
+            "versus": ""
+        }
+    }]
+}
