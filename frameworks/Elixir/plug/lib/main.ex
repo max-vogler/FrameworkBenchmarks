@@ -3,8 +3,9 @@ defmodule Main do
   import Supervisor.Spec
 
   def start(_type, _args) do
-    children = [
-      Plug.Adapters.Cowboy.child_spec(:http, Router, [], [port: 8080]),
+    plug_config = Application.get_env(:bench, Http)
+    children    = [
+      Plug.Adapters.Cowboy.child_spec(:http, Http, [], plug_config),
       worker(Repo, []),
     ]
 

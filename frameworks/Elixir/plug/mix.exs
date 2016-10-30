@@ -5,6 +5,8 @@ defmodule Hello.Mixfile do
     [app: :bench,
      version: "0.1.0",
      elixir: "~> 1.3",
+     build_embedded: Mix.env == :prod,
+     start_permanent: Mix.env == :prod,
      deps: deps]
   end
 
@@ -19,7 +21,7 @@ defmodule Hello.Mixfile do
      {:poison, "~> 2.0"},
      {:ecto, "~> 2.0"},
      {:postgrex, "~> 0.12"},
-     {:html_entities, "~> 0.3"},
+     {:phoenix_html, "~> 2.7"},
     ]
   end
 end
